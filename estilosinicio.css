@@ -96,7 +96,8 @@ html, body {
   top: 200px;
 }
 #blades_of_fire{
-  height: 300px; /* altura fija */
+  height: 100%; /* altura fija */
+  max-height: 800px;
   width: auto;
   position: relative;
   right: 30%;
