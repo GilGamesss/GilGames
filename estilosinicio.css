@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  overflow-y: auto;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 60px 1fr auto; /* aquí aumenté la fila superior a 150px */
+  grid-template-columns: 10% 80% 10%;
+  grid-template-areas:
+    "top top top"
+    "left center right"
+    "bottom bottom bottom";
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Áreas */
+.top {
+  grid-area: top;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top nav {
+  display: flex;
+  gap: 20px;
+}
+
+.top nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.top nav a:hover {
+  background-color: #555;
+}
+
+.left,
+.right {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.left {
+  grid-area: left;
+  background-image: url('izquierda.jpg');
+  background-attachment: fixed;
+}
+
+.right {
+  grid-area: right;
+  background-image: url('derecha.jpg');
+  background-attachment: fixed;
+}
+
+.center {
+  grid-area: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+  
+}
+
+.bottom {
+  grid-area: bottom;
+  background-color: #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+#days_gone {
+   height: 300px; /* altura fija */
+  width: auto;
+  position: relative;
+  top: 200px;
+}
+#blades_of_fire{
+  height: 300px; /* altura fija */
+  width: auto;
+  position: relative;
+  right: 30%;
+  top: 50px;
+  
+}
+#expedition33 {
+  height: 300px; /* altura fija */
+  width: auto;
+  position: relative;
+  left: 30%;
+  top: -550px;
+}
+
+
+
+#pelicula {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+#titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.enlace_izquierda {
+  position: absolute;
+  left: 30%;
+  font-size: 26px;
+}
