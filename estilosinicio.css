@@ -90,7 +90,8 @@ html, body {
 }
 
 #days_gone {
-   height: 300px; /* altura fija */
+   height: 100%; /* altura fija */
+   max-height: 300px;
   width: auto;
   position: relative;
   top: 200px;
@@ -105,7 +106,8 @@ html, body {
   
 }
 #expedition33 {
-  height: 300px; /* altura fija */
+  height: 100%; /* altura fija */
+  max-height: 300px;
   width: auto;
   position: relative;
   left: 30%;
